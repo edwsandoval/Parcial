@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script>var formulario= null;</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previo 1 Web</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div style="text-align: center;"><label id="titulo" >Tabla de Calorias</label></div>
+    <div id="tableContainer">
+        <table cellspacing="0" >
+            <div id="encabezado">
+                <tr class="filaEncabezado" >
+                    <td aling="center">Alimento</td>
+                    <td aling="center">Calorias <br>(kCal)</td>
+                    <td aling="center">Grasas <br>(g)</td>
+                    <td aling="center">Proteina <br>(g)</td>
+                    <td aling="center">Carbohidratos <br>(g)</td>
+                    <td aling="center">ok</td>
+                    <td aling="center">Opciones</td>
+                </tr>
+
+                </tr>
+            </div>
+            <div id="contenido">
+            <form id="frm1" action="resultado.html" method="get">
+                <tr id="f1" class="filaContenido" style="outline: thin solid">
+                    <td><label class="label1" id="l11">Arandano</label><input name="alimento" size="7" id="i11" class="inputOculto1" type="text" value="Arandano"></td>
+                    <td><label class="label1" id="l12">49</label><input name="calorias" size="7" id="i12" class="inputOculto1" type="text" value="49"></td>
+                    <td><label class="label1" id="l13">0.2</label><input name="grasas" size="7" id="i13" class="inputOculto1" type="text" value="0.2"></td>
+                    <td><label class="label1" id="l14">0.4</label><input name="proteinas" size="7" id="i14" class="inputOculto1" type="text" value="0.4"></td>
+                    <td><label class="label1" id="l15">12.7</label><input name="carbohidratos" size="7" id="i15" class="inputOculto1" type="text" value="12.7"></td>
+                    <td><img class="label1" src="./images/smileFace1.png" id="l16"><select name="ok" class="inputOculto1" id="i16" value="bien"><option value="bien">bien</option><option value="mal">mal</option></select></td>
+                    <td><a class="label1" onclick="editar('f1');formulario='frm1';">Editar</a><label class="inputOculto1" style="color:white; display: none;">En<br>edicion</label></td>
+                </tr>
+            </form>
+            <form id="frm2" action="resultado.html" method="get">
+                <tr id="f2" class="filaContenido" style="outline: thin solid">
+                    <td><label class="label2" id="l21">Platano</label><input name="alimento" size="7" id="i21" class="inputOculto2" type="text"  value="Platano"></td>
+                    <td><label class="label2" id="l22">90</label><input name="calorias" size="7" id="i22" class="inputOculto2" type="text" value="90"></td>
+                    <td><label class="label2" id="l23">0.3</label><input name="grasas" size="7" id="i23" class="inputOculto2" type="text" value="0.3"></td>
+                    <td><label class="label2" id="l24">1.0</label><input name="proteinas" size="7" id="i24" class="inputOculto2" type="text" value="1.0"></td>
+                    <td><label class="label2" id="l25">23.5</label><input name="carbohidratos" size="7" id="i25" class="inputOculto2" type="text" value="23.5"></td>
+                    <td><img class="label2" src="./images/deadFace.png" id="l26"><select name="ok" class="inputOculto2" id="i26" value="mal"><option value="bien">bien</option><option value="mal">mal</option></select></td>
+                    <td><a class="label2" onclick="editar('f2');formulario='frm2';">Editar</a><label class="inputOculto2" style="color:white; display: none;">En<br>edicion</label></td>
+                </tr>
+            </form>
+
+            <form id="frm3" action="resultado.html" method="get">
+                <tr id="f3" class="filaContenido" style="outline: thin solid">
+                    <td><label class="label3" id="l31">Cereza</label><input name="alimento" size="7" id="i31" class="inputOculto3" type="text" value="Cereza"></td>
+                    <td><label class="label3" id="l32">46</label><input name="calorias" size="7" id="i32" class="inputOculto3" type="text" value="46"></td>
+                    <td><label class="label3" id="l33">0.4</label><input name="grasas" size="7" id="i33" class="inputOculto3" type="text" value="0.4"></td>
+                    <td><label class="label3" id="l34">0.9</label><input name="proteinas" size="7" id="i34" class="inputOculto3" type="text" value="0.9"></td>
+                    <td><label class="label3" id="l35">10.9</label><input name="carbohidratos" size="7" id="i35" class="inputOculto3" type="text" value="10.9"></td>
+                    <td><img class="label3" src="./images/deadFace.png" id="l36"><select name="ok" class="inputOculto3" id="i36" value="mal"><option value="bien">bien</option><option value="mal">mal</option></select></td>
+                    <td><a class="label3" onclick="editar('f3'); formulario='frm3';">Editar</a><label class="inputOculto3" style="color:white; display: none;">En<br>edicion</label></td>
+                </tr>
+            </form>
+
+            <form id="frm4" action="resultado.html" method="get">
+                <tr id="f4" class="filaContenido" style="outline: thin solid">
+                    <td><label class="label4" id="l41">Fresa</label><input name="alimento" size="7" id="i41" class="inputOculto4" type="text"  value="Fresa"></td>
+                    <td><label class="label4" id="l42">37</label><input name="calorias" size="7" id="i42" class="inputOculto4" type="text" value="37"></td>
+                    <td><label class="label4" id="l43">0.5</label><input name="grasas" size="7" id="i43" class="inputOculto4" type="text" value="0.5"></td>
+                    <td><label class="label4" id="l44">0.8</label><input name="proteinas" size="7" id="i44" class="inputOculto4" type="text" value="0.8"></td>
+                    <td><label class="label4" id="l45">8.3</label><input name="carbohidratos" size="7" id="i45" class="inputOculto4" type="text" value="8.3"></td>
+                    <td><img class="label4" src="./images/smileFace1.png" id="l36"><select name="ok" class="inputOculto4" id="i46" value="bien"><option value="bien">bien</option><option value="mal">mal</option></select></td>
+                    <td><a class="label4" onclick="editar('f4');formulario='frm4';">Editar</a><label class="inputOculto4" style="color:white; display: none;">En<br>edicion</label></td>
+                </tr> 
+            </form>
+            </div>
+        </table>
+    <label style="color:rgba(155, 155, 155, 0.836);text-align: left;">Contenido nutricional por cada 100 g de alimento</label>
+    <div id="lastItems" style="display: none;">
+        <br><br><br><br>Pulse Aceptar para guardar los cambios o cancelar para anularlos<br><br>
+        <button onclick="enviarFormulario(formulario);formulario=null" class="bt1" >Aceptar</button><label style="color: white;">--</label><button onclick="location.reload();formulario=null;" class="bt2">Cancelar</button>
+    </div>
+    </div>
+</body>
+</html>

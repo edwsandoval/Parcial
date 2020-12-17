@@ -1,0 +1,36 @@
+.bootstrapContainer{
+   width: 225px;
+   height: 400px;
+}
+img{
+    max-width: 60px;
+    height: auto;
+}
+
+input{
+    border-radius: 5px;
+    font-size:10px; 
+    border-color: transparent;
+    color:white;
+    font-weight: 1000;
+}
+
+  /* top-left border-radius */
+  table tr:first-child th:first-child {
+    border-top-left-radius: 6px;
+  }
+  
+  /* top-right border-radius */
+  table tr:first-child th:last-child {
+    border-top-right-radius: 6px;
+  }
+  
+  /* bottom-left border-radius */
+  table tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+  }
+  
+  /* bottom-right border-radius */
+  table tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+  }
